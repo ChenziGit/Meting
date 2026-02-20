@@ -19,7 +19,8 @@
     "prepublishOnly": "npm run build",
     "test": "npm run build && node test/test.js",
     "example": "npm run build && node test/example.js",
-    "start": "npm run build && node test/example.js"
+    "start": "npm run build && node test/example.js",
+    "serve": "node server.js"
   },
   "keywords": [
     "music",
@@ -63,5 +64,9 @@
     "@rollup/plugin-node-resolve": "^16.0.1",
     "@rollup/plugin-terser": "^0.4.4",
     "rollup": "^4.49.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1"
   }
 }
